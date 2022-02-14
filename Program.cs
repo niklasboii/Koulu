@@ -1,24 +1,20 @@
-﻿//Muuttujien esittely
-double pituus;
-//Pituuden kysely ja luku
-Console.Write("Anna pituutesi senttimetreinä: ");
-pituus = int.Parse(Console.ReadLine());
+﻿double euro;
+
+Console.Write("VALUUTTALASKURI");
 Console.WriteLine();
 
-//Pituusmuunnokset
-double metria = pituus / 100;
-double mailia = pituus / 160934.4;
-double jaardia = pituus / 91.44;
-double tuumaa = pituus / 2.54;
+Console.Write("---------------");
+Console.WriteLine();
 
-//kahden desimaalin tarkkuudella
-string metrit = string.Format("{0:0.00}", metria);
-string mailit = string.Format("{0:0.00}", mailia);
-string jaardit = string.Format("{0:0.00}", jaardia);
-string tuumat = string.Format("{0:0.00}", tuumaa);
+Console.Write("Anna summa euroina: ");
+euro =int.Parse(Console.ReadLine());
+Console.WriteLine();
 
-//tulostus näytölle
-Console.WriteLine(metrit + " metriä");
-Console.WriteLine(mailit + " mailia");
-Console.WriteLine(jaardit + " jaardia");
-Console.WriteLine(tuumat + " tuumaa");
+double dollari = euro / 0.826644628;
+double punta = euro /  1.14942529;
+
+string dollarit = string.Format("{0:0.00}", dollari);
+string punnat = string.Format("{0:0.00}", punta);
+
+Console.WriteLine("    " + dollarit + " $");
+Console.WriteLine("    " + punnat + " £");
