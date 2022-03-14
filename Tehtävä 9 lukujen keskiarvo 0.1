@@ -1,0 +1,40 @@
+﻿
+Console.Write("Tehtava 9");
+Console.WriteLine();
+
+Console.Write("------------------");
+Console.WriteLine();
+
+Console.Write("");
+Console.WriteLine();
+
+Console.Write("Anna viisi lukua niin lasken niiden keskiarvon");
+Console.WriteLine();
+
+//Tässä luodan taulukko, määritellään että siinä on 5 osiota/laatikkoa
+double[] luvut = new double[5];
+//Alustetaan muuttujat
+double summa = 0;
+double keskiarvo = 0;
+
+//Kysytään luvut ja sitten luetaan käyttäjän antamat luvut taulukkoon
+for (int i = 0; i < 5; i++)
+{
+    Console.Write("Anna " + (i + 1) + ". luku: ");
+    luvut[i] = double.Parse(Console.ReadLine()); //taulukko, keräys,
+}
+
+//apu muuttuja käy taulukon käyttäjän antamat luvut läpi ja laskee ne yhteen
+foreach (double apu in luvut) 
+{
+    summa = summa + apu;
+
+}
+
+//summa jaetaan 5 keskiaroksi
+keskiarvo = summa / 5; 
+
+//Tulostetan keskiarvo
+Console.Write("Keskiarvo on " + keskiarvo);
+
+
