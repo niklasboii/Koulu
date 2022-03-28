@@ -1,0 +1,37 @@
+
+//Tulostetaan "otsikko", luetaan ja määritetään muuttujaan tuo käyttäjän syöttämä sana tai lause
+Console.Write("Anna jokin sana tai lause, niin ohjelma tekee sille temppuja: ");
+string teksti = Console.ReadLine();
+
+Console.WriteLine();
+
+Console.WriteLine(teksti);
+
+Console.WriteLine();
+
+//Konvertoidaan sana/lause merkkijonoksi taulukkoon (=Use ToCharArray to convert string to array. )
+char[] merkkijono = teksti.ToCharArray();
+
+//Tulostetaan silmukalla merkki kerrallaan ja välein (=Loop through array. )
+for (int i = 0; i < teksti.Length; i++)
+{
+    //Haetaan merkki kerrallaan
+    Console.Write(teksti[i]);
+    //Tulostetaan merkki
+
+    //Tulostetaan väli
+    Console.Write(" ");
+}
+
+Console.WriteLine(); 
+
+//Tulostetaan silmukalla merkki kerrallaan lopusta alkuun välein
+for (int i = teksti.Length-1; i>=0; i--)
+{
+    //Haetaan merkki kerrallaan (= Get character from array. )
+    Console.Write(teksti[i]);
+    //Tulostetaan merkki
+
+    //Tulostetaan väli
+    Console.Write(" ");
+}
