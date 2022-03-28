@@ -1,25 +1,61 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtävä 17 Vakioluettelo", "Tehtävä 17 Vakioluettelo\Tehtävä 17 Vakioluettelo.csproj", "{D16CA77C-00AE-422D-942A-FA7D5A4D7E50}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D16CA77C-00AE-422D-942A-FA7D5A4D7E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D16CA77C-00AE-422D-942A-FA7D5A4D7E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D16CA77C-00AE-422D-942A-FA7D5A4D7E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D16CA77C-00AE-422D-942A-FA7D5A4D7E50}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4D96DE5D-3149-45F8-8DDC-0F1706877672}
-	EndGlobalSection
-EndGlobal
+Console.WriteLine("Tervetuloa ohjelmaan. Siirry valikossa valitsella numero.");
+
+int nro = 0;
+string nimi = "";
+int ika = 0;
+label:
+
+
+
+int TulostaValikko()
+{
+    Console.WriteLine("1.       Syötä nimesi.");
+    Console.WriteLine("2.       Syötä ikäsi.");
+    Console.WriteLine("3.       Näytä nimesi.");
+    Console.WriteLine("4.       Näytä ikäsi.");
+    Console.WriteLine("5.       Poistu ohjelmasta.");
+    Console.WriteLine(" ");
+    Console.Write("> ");
+    nro = int.Parse(Console.ReadLine());
+    nro--;
+    return nro;
+    
+}
+int valinta = TulostaValikko();
+    switch (valinta)
+    {
+        case (int)valikko.Syota_nimesi:
+            Console.Write("Syötä nimesi: ");
+            nimi = Console.ReadLine();
+            goto label;
+
+        case (int)valikko.Syota_ikasi:
+            Console.Write("Syötä ikäsi: ");
+            ika = int.Parse(Console.ReadLine());
+            goto label;
+
+        case (int)valikko.Nayta_nimesi:
+            Console.WriteLine("Nimesi on " + nimi );
+            goto label;
+
+        case (int)valikko.Nayta_ikasi:
+            Console.WriteLine("Ikäsi on " + ika);
+            goto label;
+
+        case (int)valikko.Poistu_ohjelmasta:
+            Console.WriteLine("Poistutaan...");
+            break;
+
+        default:
+            Console.WriteLine("Antmasi luku ei ole valikosa....");
+            goto label;
+    }
+
+    enum valikko
+    {
+    Syota_nimesi,
+    Syota_ikasi,
+    Nayta_nimesi,
+    Nayta_ikasi,
+    Poistu_ohjelmasta
+    }
