@@ -1,0 +1,10 @@
+Console.Write("Anna luku 1 ja 10 välillä: ");
+int luku = int.Parse(Console.ReadLine());
+
+Console.WriteLine();
+
+Console.WriteLine("1 * " + luku + " = " + 1 * luku + "   1 / " + luku + " = " + 1 / luku + "   1 % " + luku + " = " + 1 % luku);
+Console.WriteLine("2 * " + luku + " = " + 2 * luku + "   2 / " + luku + " = " + 2 / luku + "   2 % " + luku + " = " + 2 % luku);
+Console.WriteLine("3 * " + luku + " = " + 3 * luku + "   3 / " + luku + " = " + 3 / luku + "   3 % " + luku + " = " + 3 % luku);
+Console.WriteLine("4 * " + luku + " = " + 4 * luku + "   4 / " + luku + " = " + 4 / luku + "   4 % " + luku + " = " + 4 % luku);
+Console.WriteLine("5 * " + luku + " = " + 5 * luku + "   5 / " + luku + " = " + 5 / luku + "   5 % " + luku + " = " + 5 % luku);
