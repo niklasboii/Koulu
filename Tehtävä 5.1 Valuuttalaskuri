@@ -1,0 +1,45 @@
+Console.WriteLine("VALUUTTALASKURI");
+
+Console.WriteLine("------------------");
+Console.WriteLine();
+
+Console.Write("Anna summa euroina: ");
+int euro = int.Parse(Console.ReadLine());
+
+Console.Write("Vastaa 1 jos haluat muuntaa dollareiksi ja 2 jos haluat muuntaa punniksi: ");
+String valuutta = Console.ReadLine();
+
+
+if (valuutta == "1")
+    Console.WriteLine(String.Format("{0:0.00}",0.95 * euro) + " $"); //dollari
+
+else if (valuutta == "2")
+    Console.WriteLine(String.Format("{0:0.00}",1.19 * euro) + " £"); //punta
+
+else
+    Console.WriteLine("En ymmärrä, yritä uudestaan valitsemalla 1 tai 2.");
+    
+    
+    TAI
+    
+    
+Console.WriteLine("VALUUTTALASKURI");
+
+Console.WriteLine("------------------");
+Console.WriteLine();
+
+Console.Write("Anna summa euroina: ");
+int euro = int.Parse(Console.ReadLine());
+
+Console.Write("Vastaa 1 jos haluat muuntaa dollareiksi ja 2 jos haluat muuntaa punniksi: ");
+int valuutta = int.Parse(Console.ReadLine());
+
+
+if (valuutta == 1)
+    Console.WriteLine(String.Format("{0:0.00}",0.95 * euro) + " $"); //dollari
+
+else if (valuutta == 2)
+    Console.WriteLine(String.Format("{0:0.00}",1.19 * euro) + " £"); //punta
+
+else
+    Console.WriteLine("En ymmärrä, yritä uudestaan valitsemalla 1 tai 2.");    
