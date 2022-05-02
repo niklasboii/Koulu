@@ -1,0 +1,38 @@
+//Kysymysket ja niiden vastaausten tallentminen
+Console.Write("Paistaako aurinko (K/E) ? ");
+String aurinko = Console.ReadLine();
+
+Console.Write("Sataako vettä (K/E) ? ");
+String sade = Console.ReadLine();
+
+Console.Write("Onko lämpötila >0 (K/E) ? ");
+String lampotila = Console.ReadLine();
+//Väli Kysymyskiin ja lopputkstiin
+Console.WriteLine();
+
+//Käytössä if else oiminto
+if (aurinko == "K" && sade == "K" && lampotila == "K")
+{
+    Console.WriteLine("Aurinko paistaa ja vettä sataa, taitaa tulla kesä.");
+}
+
+else if (aurinko == "E" && sade == "K" && lampotila == "K")
+{
+    Console.WriteLine("Syksy saapui tuuli vei lehdet mennessään.");
+}
+
+else if (aurinko == "E" && sade == "E" && lampotila == "K")
+{
+    Console.WriteLine("Jo joutui armas aika ja suvi suloinen.");
+}
+
+else if (aurinko == "K" && sade == "E" && lampotila == "E")
+{
+    Console.WriteLine("Keväinen talvi kesän tuo.");
+}
+
+else
+{
+    Console.WriteLine("Onpa erikoinen sää !");
+}
+//Tulostus
