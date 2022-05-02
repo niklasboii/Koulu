@@ -1,0 +1,12 @@
+Console.WriteLine("Tehtävä 7.1");
+Console.WriteLine();
+Console.WriteLine("---------------");
+Console.WriteLine();
+
+Console.Write("Anna aloitusluku: ");
+int luku = int.Parse(Console.ReadLine());
+
+for (int i = luku; i > 0; i--)
+{
+    Console.WriteLine(i);
+}
