@@ -1,0 +1,10 @@
+Console.Write("Anna lukupyramidin kerrosten määrä: ");
+int luku = int.Parse(Console.ReadLine()); //Esitellään numerollinen muuttuja Looppia varten
+string tulostettava = ""; //Esitellään tulostettava muuttuja
+for (int i = 1; i <= luku; i++) //Määritetään i
+{
+    //Int muutetaan String muotoon ja lisätään välilyönti jotta rivin alkioitten väli erottuu
+    tulostettava += Convert.ToString(i) + " ";  
+
+    Console.WriteLine(tulostettava); //Tulostetaan pyramidi
+}
