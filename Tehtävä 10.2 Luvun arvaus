@@ -1,0 +1,60 @@
+Console.Write("Tehtava 10 vaihe 2");
+Console.WriteLine();
+
+Console.Write("------------------");
+Console.WriteLine();
+
+Console.Write("");
+Console.WriteLine();
+
+Console.Write("Arvaa arvottu luku väliltä 1-12 (lopetus L-mekillä)");
+Console.WriteLine();
+
+Random satluku = new Random();
+int arvottuluku = satluku.Next(1, 13); //arvotaan luku 1-12 väliltä 
+int i = 0;//Luodaan i ja anettaan alku arvo 0
+String va = ""; //Väliaikainen tallennus
+int luku = 0;//Väliaikainen tallennus esitetään kokonaislukuna
+
+
+//Looppi pyörii niin kauan kuin arvottu luku ei ole sama kuin arvaus JA käyttäjä ei syöttää L-kirjanta
+while (va !="L" && va !="l" && luku != arvottuluku) 
+{
+    i++;//Lisätään i arvoa yhdellä
+    Console.Write( i + ". yritys: Arvaa luku ? ");//Esitetään kysymys
+    va = Console.ReadLine();//Tallennetaan käyttäjän vastus
+
+    if (va  == "L" || va == "l")//tarkastetaan onko käyttäjä syöttänyt L/l = lopetus|ON
+    {
+       Console.Write("Lopetetaan...");
+        Console.WriteLine();
+
+        Console.WriteLine();
+
+        Console.Write("Halusit lopettaa LUUSERI !!");
+        Console.WriteLine();
+
+        Console.WriteLine();
+
+        Console.Write("Oikea vastaus on " + arvottuluku);
+        Console.WriteLine();
+
+        break;//Loopin lopetus
+    }
+
+    if (va != "L" && va != "l")//tarkastetaan onko käyttäjä syöttänyt L/l = lopetus|EI
+    {
+        luku = int.Parse(va); //Väliaikainen tallennus muutetaan kokonaisluvuksi
+
+        if (luku == arvottuluku) //Tarkastetaan onko arvottu luku on sama kuin arvaus
+        {
+            Console.Write("Onneksi olkoon, arvasit oikein !!!");
+            Console.WriteLine();
+
+            Console.Write("Oikea vastaus on " + arvottuluku);
+            Console.WriteLine();
+            break;//Loopin lopetus
+        }
+    }
+
+}
