@@ -1,0 +1,52 @@
+Boolean jatko = true;//Luodaan totuusarvo muuttuja ja annetaan alkuarvo true
+int luku = 0;//Määritellään lukumuuttuja ja annetaa alkuarvo 0(sijaitsee silmukan ulkopuolella ettei varaa turhaa muistitilaa)
+
+while (jatko)//Luodaan while looppi/silmukka joka pyörii niin pitkään kuin jatko menee false
+{ 
+    Console.Write("Anna arvosana väliltä 4 - 10: ");//Kysytään kysymys
+    luku = int.Parse(Console.ReadLine());//Tallennetaan käyttäjän vastaus luku muuttujaan
+    Console.WriteLine();
+
+    switch (luku)//Luodaan switch ehtolause
+    {
+        case 4://Lukumuuttijassa oleva arvo vaihtoehto
+            Console.WriteLine("4 on hylätty arvosana.");//Vastaus
+            Console.WriteLine();//Välirivi
+            break;//pysäytys
+        case 5:
+            Console.WriteLine("5 on huono arvosana.");
+            Console.WriteLine();
+            break;
+        case 6:
+            Console.WriteLine("6 on välttävä arvosana");
+            Console.WriteLine();
+            break;
+        case 7:
+            Console.WriteLine("7 on tyydyttävä arvosana");
+            Console.WriteLine();
+            break;
+        case 8:
+            Console.WriteLine("8 on hyvä arvosana.");
+            Console.WriteLine();
+            break;
+        case 9:
+            Console.WriteLine("9 on kiitetävä arvosana");
+            Console.WriteLine();
+            break;
+        case 10:
+            Console.WriteLine("10 on erinomainen arvosana");
+            Console.WriteLine();
+            break;
+        default://Jos muuttujan arvoa ei ole mainittu case:ssa
+            Console.WriteLine("En tunne antamaasi merkkiä.");//Vastaus
+            Console.WriteLine();//Välirivi
+            break;//Pysäytys
+    }
+
+    Console.Write("Haluatko jatkaa (k/e)? "); //Kysymys
+    if (Console.ReadLine() == "e")//Kysytäät käyttäjältä -> jos vastaus on e
+    {
+        jatko = false;//Muutetaan jatkomuuttujan arvo falseksi
+    }
+    Console.WriteLine();
+}
