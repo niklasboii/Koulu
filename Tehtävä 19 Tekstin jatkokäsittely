@@ -1,0 +1,37 @@
+Console.Write("Anna jokin sana, niin ohjelma kertoo onko sanassa pientä a-kirjainta ja monesko kirjain se on: "); 
+
+string nimi = Console.ReadLine();//Luodaan nimi merkkijono(koska on string) muuttuja ja tallennetaan käyttäjän kirjaama sana siihen 
+
+Console.WriteLine(); 
+
+Console.WriteLine(nimi);//Kertoo käyttäjän kirjoittaman sanan 
+
+Console.WriteLine(); 
+
+  
+
+if (nimi.Contains("a")) 
+
+{ 
+
+    Console.WriteLine("Löytyy pieni a-kirjain"); //Check whether specified value exists or not in string 
+
+    Console.WriteLine(); 
+
+    int indexi = nimi.IndexOf("a") + 1;//Luodaan indexi kokonaisluku(int) muuttuja joka saa arvon nimi muuttujasta jos a-kirjain löytyy sekä lisätään 1.(ohjelma käsittää että ensimmäinen numero on 0) 
+
+    Console.WriteLine("Ensimmäinen pieni a-kirjain on " + Convert.ToString(indexi) + ". kirjain annetussa sanassa!");//Palauttaa ensimmäisen määritetyn indexin arvon sijainnin 
+
+} 
+
+  
+
+else//Jos if ehdot eivät täyty niin suoritetaan else 
+
+{ 
+
+    Console.WriteLine("Eipä löytynyt haettua kirjainta tästä sanasta !"); 
+
+    Console.WriteLine(); 
+
+} 
