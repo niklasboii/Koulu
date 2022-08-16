@@ -1,0 +1,6 @@
+Console.WriteLine("OHJE: Kirjoita nimesi niin sinua tervehditään!");
+Console.WriteLine("");
+Console.Write("Kerro nimesi: ");
+String nimi = Console.ReadLine(); // nimeen tallennetaan käyttäjän vastaus
+Console.WriteLine("");
+Console.WriteLine("Hei " + nimi);
