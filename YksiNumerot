@@ -1,0 +1,14 @@
+int j = 1; //1 tallennetaan j muuttujaan
+do
+{
+    if (j < 10) //jos j on pienempi kuin10 tulotetaan nro 1 
+    {
+        Console.WriteLine(1);
+    } 
+    else // muuten lisätäänj no lisäksi 1
+    {
+        Console.WriteLine(j + 1);
+    }
+    j = j * 10; // lopuksi j kerrotaan 10
+}
+while (j <= 1000); // looppi lopetetaan kun saavuttaa tuhannen
