@@ -1,0 +1,91 @@
+//ESITTELY, ALKUARVOT, SUORITUS JA TULOS
+//1.
+int x = 10, y = 5;
+Console.Write("1.Anna kokonaisluku: ");
+y = int.Parse(Console.ReadLine());
+
+x = y + 3;
+Console.WriteLine("x = " + y +" + 3");
+Console.WriteLine("X = " + x);
+Console.WriteLine("");
+
+//2.
+int x2 = 10, y2 = 5;
+Console.Write("2.Anna kokonaisluku: ");
+y2 = int.Parse(Console.ReadLine());
+
+x2 = y2 - 2;
+Console.WriteLine("x = " + y2 + " - 2");
+Console.WriteLine("X = " + x2);
+Console.WriteLine("");
+
+//3.
+int x3 = 10, y3 = 5;
+Console.Write("3.Anna kokonaisluku: ");
+y3 = int.Parse(Console.ReadLine());
+
+x3 = y3 * 5;
+Console.WriteLine("x = " + y3 + " * 5");
+Console.WriteLine("X = " + x3);
+Console.WriteLine("");
+
+//4.
+double x4 = 10, y4 = 5;
+Console.Write("4.Anna kokonaisluku: ");
+y4 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x4 + " / " + y4);
+
+x4 = x4 / y4;
+Console.WriteLine("X = " + x4);
+Console.WriteLine("");
+
+//5.
+int x5 = 24, y5 = 5;
+Console.Write("5.Anna kokonaisluku: ");
+y5 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x5 + " % " + y5);
+
+
+x5 = x5 % y5;
+Console.WriteLine("X = " + x5);
+Console.WriteLine("");
+
+//6.
+int x6 = 10, y6 = 5;
+Console.Write("6.Anna kokonaisluku: ");
+y6 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x6 + " += " + y6);
+
+x6 = x6 += y6;
+Console.WriteLine("X = " + x6);
+Console.WriteLine("");
+
+//7.
+int x7 = 10, y7 = 5;
+Console.Write("7.Anna kokonaisluku: ");
+y7 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x7 + " -= " + y7);
+
+x7 = x7 -= y7;
+Console.WriteLine("X = " + x7);
+Console.WriteLine("");
+
+//8.
+int x8 = 10, y8 = 5;
+Console.Write("8.Anna kokonaisluku: ");
+y8 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x8 + " *= " + y8 + "*5");
+
+x8 = x8 *= y8*5;
+Console.WriteLine("X = " + x8);
+Console.WriteLine("");
+
+//9.
+int x9 = 10, y9 = 5;
+Console.Write("9.Anna kokonaisluku: ");
+y9 = int.Parse(Console.ReadLine());
+Console.WriteLine("x = " + x9 + " /= " + y9);
+
+x9 = x9 /= y9;
+Console.WriteLine("X = " + x9);
+Console.WriteLine("");
