@@ -1,0 +1,115 @@
+//// 1. Kirjoita ehtolause, joka pyytää käyttäjältä kahta kokonaislukuarvoa ja vaihtaa niiden 
+//// paikkaa, mikäli ensimmäinen on suurempi kuin toinen (eli tulostaa suuruusjärj.)
+
+//Console.Write("1.Anna kokonaisluku: ");
+//int luku1 = int.Parse(Console.ReadLine());
+//Console.WriteLine();
+//Console.Write("2.Anna kokonaisluku: ");
+//int luku2 = int.Parse(Console.ReadLine());
+//Console.WriteLine();
+
+//if (luku1 >= luku2)
+//{
+//    Console.WriteLine(luku1 + " on suurempi kuin " + luku2 + ".");
+//}
+
+//else
+//{
+//    Console.WriteLine(luku2 + " on suurempi kuin " + luku1 + ".");
+//}
+
+//Console.WriteLine();
+//Console.WriteLine();
+
+////Kirjoita ohjelma, joka etsii suurimman kolmesta kokonaisluvusta
+
+//int[] luvut = new int[3];
+
+//Console.Write("1.Anna kokonaisluku: ");
+//luvut[0] = Int32.Parse(Console.ReadLine());
+//Console.Write("2.Anna kokonaisluku: ");
+//luvut[1] = Int32.Parse(Console.ReadLine());
+//Console.Write("3.Anna kokonaisluku: ");
+//luvut[2] = Int32.Parse(Console.ReadLine());
+
+//Array.Sort(luvut);
+//int viimeinen = luvut.Length;
+//Console.WriteLine(luvut[viimeinen - 1] + " on suurin luku.");
+
+//Console.WriteLine();
+//Console.WriteLine();
+
+////Kirjoita ohjelma, joka pyytää kokonaislukua (0-9) ja riippuen annetusta luvusta,
+////tulostaa sen sanana. Käytä switch komentoa
+
+//Console.Write("Anna kokonaisluku 0-9 väliltä: ");
+//int luku = int.Parse(Console.ReadLine());
+//Console.WriteLine();
+
+//switch (luku)
+//{
+//    case 0:
+//        Console.WriteLine("Nolla");
+//        break;    
+//    case 1:
+//        Console.WriteLine("Yksi");
+//        break;
+//    case 2:
+//        Console.WriteLine("Kaksi");
+//        break;
+//    case 3:
+//        Console.WriteLine("Kolme");
+//        break;
+//    case 4:
+//        Console.WriteLine("Neljä");
+//        break;
+//    case 5:
+//        Console.WriteLine("Viisi");
+//        break;
+//    case 6:
+//        Console.WriteLine("Kuusi");
+//        break;
+//    case 7:
+//        Console.WriteLine("Seitsemän");
+//        break;
+//    case 8:
+//        Console.WriteLine("Kahdeksan");
+//        break;
+//    case 9:
+//        Console.WriteLine("Yhdeksän");
+//        break;
+//    default:
+//        Console.WriteLine("Anna luku ainoastaan 0-9 väliltä!");
+//        break;
+//}
+
+//Console.WriteLine();
+//Console.WriteLine();
+
+//Kirjoita ohjelma, joka etsii suurimman annetuista 5 kokonaisluvusta
+
+int[] nro = new int[5];
+
+Console.Write("1.Anna kokonaisluku: ");
+nro[0] = Int32.Parse(Console.ReadLine());
+Console.Write("2.Anna kokonaisluku: ");
+nro[1] = Int32.Parse(Console.ReadLine());
+Console.Write("3.Anna kokonaisluku: ");
+nro[2] = Int32.Parse(Console.ReadLine());
+Console.Write("4.Anna kokonaisluku: ");
+nro[2] = Int32.Parse(Console.ReadLine());
+Console.Write("5.Anna kokonaisluku: ");
+nro[2] = Int32.Parse(Console.ReadLine());
+
+Array.Sort(nro);
+int viimeinen1 = nro.Length;
+Console.WriteLine(nro[viimeinen1 - 1] + " on suurin luku.");
+
+Console.WriteLine();
+Console.WriteLine();
+
+//Kirjoita ohjelma, joka kysyy käyttäjältä, mitä käyttäjä haluaa syöttää (kokonaisluvun,
+//double-luvun tai merkkijonon). Mikäli käyttäjä haluaa syöttää luvun, ohjelma
+//kasvattaa lukua yhdellä. Mikäli merkkijonon, ohjelma lisää loppuun *-merkin ja
+//tulostaa tämän jälkeen vastauksen konsoliin. Käytä Switch komentoa
+
