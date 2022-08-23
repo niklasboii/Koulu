@@ -1,92 +1,92 @@
-//// 1. Kirjoita ehtolause, joka pyytää käyttäjältä kahta kokonaislukuarvoa ja vaihtaa niiden 
-//// paikkaa, mikäli ensimmäinen on suurempi kuin toinen (eli tulostaa suuruusjärj.)
+// 1. Kirjoita ehtolause, joka pyytää käyttäjältä kahta kokonaislukuarvoa ja vaihtaa niiden 
+// paikkaa, mikäli ensimmäinen on suurempi kuin toinen (eli tulostaa suuruusjärj.)
 
-//Console.Write("1.Anna kokonaisluku: ");
-//int luku1 = int.Parse(Console.ReadLine());
-//Console.WriteLine();
-//Console.Write("2.Anna kokonaisluku: ");
-//int luku2 = int.Parse(Console.ReadLine());
-//Console.WriteLine();
+Console.Write("1.Anna kokonaisluku: ");
+int luku1 = int.Parse(Console.ReadLine());
+Console.WriteLine();
+Console.Write("2.Anna kokonaisluku: ");
+int luku2 = int.Parse(Console.ReadLine());
+Console.WriteLine();
 
-//if (luku1 >= luku2)
-//{
-//    Console.WriteLine(luku1 + " on suurempi kuin " + luku2 + ".");
-//}
+if (luku1 >= luku2)
+{
+    Console.WriteLine(luku1 + " on suurempi kuin " + luku2 + ".");
+}
 
-//else
-//{
-//    Console.WriteLine(luku2 + " on suurempi kuin " + luku1 + ".");
-//}
+else
+{
+    Console.WriteLine(luku2 + " on suurempi kuin " + luku1 + ".");
+}
 
-//Console.WriteLine();
-//Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
 
-////Kirjoita ohjelma, joka etsii suurimman kolmesta kokonaisluvusta
+//2.Kirjoita ohjelma, joka etsii suurimman kolmesta kokonaisluvusta
 
-//int[] luvut = new int[3];
+int[] luvut = new int[3];
 
-//Console.Write("1.Anna kokonaisluku: ");
-//luvut[0] = Int32.Parse(Console.ReadLine());
-//Console.Write("2.Anna kokonaisluku: ");
-//luvut[1] = Int32.Parse(Console.ReadLine());
-//Console.Write("3.Anna kokonaisluku: ");
-//luvut[2] = Int32.Parse(Console.ReadLine());
+Console.Write("1.Anna kokonaisluku: ");
+luvut[0] = Int32.Parse(Console.ReadLine());
+Console.Write("2.Anna kokonaisluku: ");
+luvut[1] = Int32.Parse(Console.ReadLine());
+Console.Write("3.Anna kokonaisluku: ");
+luvut[2] = Int32.Parse(Console.ReadLine());
 
-//Array.Sort(luvut);
-//int viimeinen = luvut.Length;
-//Console.WriteLine(luvut[viimeinen - 1] + " on suurin luku.");
+Array.Sort(luvut);
+int viimeinen = luvut.Length;
+Console.WriteLine(luvut[viimeinen - 1] + " on suurin luku.");
 
-//Console.WriteLine();
-//Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
 
-////Kirjoita ohjelma, joka pyytää kokonaislukua (0-9) ja riippuen annetusta luvusta,
-////tulostaa sen sanana. Käytä switch komentoa
+//3.Kirjoita ohjelma, joka pyytää kokonaislukua (0-9) ja riippuen annetusta luvusta,
+//tulostaa sen sanana. Käytä switch komentoa
 
-//Console.Write("Anna kokonaisluku 0-9 väliltä: ");
-//int luku = int.Parse(Console.ReadLine());
-//Console.WriteLine();
+Console.Write("Anna kokonaisluku 0-9 väliltä: ");
+int luku = int.Parse(Console.ReadLine());
+Console.WriteLine();
 
-//switch (luku)
-//{
-//    case 0:
-//        Console.WriteLine("Nolla");
-//        break;    
-//    case 1:
-//        Console.WriteLine("Yksi");
-//        break;
-//    case 2:
-//        Console.WriteLine("Kaksi");
-//        break;
-//    case 3:
-//        Console.WriteLine("Kolme");
-//        break;
-//    case 4:
-//        Console.WriteLine("Neljä");
-//        break;
-//    case 5:
-//        Console.WriteLine("Viisi");
-//        break;
-//    case 6:
-//        Console.WriteLine("Kuusi");
-//        break;
-//    case 7:
-//        Console.WriteLine("Seitsemän");
-//        break;
-//    case 8:
-//        Console.WriteLine("Kahdeksan");
-//        break;
-//    case 9:
-//        Console.WriteLine("Yhdeksän");
-//        break;
-//    default:
-//        Console.WriteLine("Anna luku ainoastaan 0-9 väliltä!");
-//        break;
-//}
+switch (luku)
+{
+    case 0:
+        Console.WriteLine("Nolla");
+        break;
+    case 1:
+        Console.WriteLine("Yksi");
+        break;
+    case 2:
+        Console.WriteLine("Kaksi");
+        break;
+    case 3:
+        Console.WriteLine("Kolme");
+        break;
+    case 4:
+        Console.WriteLine("Neljä");
+        break;
+    case 5:
+        Console.WriteLine("Viisi");
+        break;
+    case 6:
+        Console.WriteLine("Kuusi");
+        break;
+    case 7:
+        Console.WriteLine("Seitsemän");
+        break;
+    case 8:
+        Console.WriteLine("Kahdeksan");
+        break;
+    case 9:
+        Console.WriteLine("Yhdeksän");
+        break;
+    default:
+        Console.WriteLine("Anna luku ainoastaan 0-9 väliltä!");
+        break;
+}
 
-//Console.WriteLine();
-//Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
 
-//Kirjoita ohjelma, joka etsii suurimman annetuista 5 kokonaisluvusta
+//4. Kirjoita ohjelma, joka etsii suurimman annetuista 5 kokonaisluvusta
 
 int[] nro = new int[5];
 
@@ -108,8 +108,287 @@ Console.WriteLine(nro[viimeinen1 - 1] + " on suurin luku.");
 Console.WriteLine();
 Console.WriteLine();
 
-//Kirjoita ohjelma, joka kysyy käyttäjältä, mitä käyttäjä haluaa syöttää (kokonaisluvun,
-//double-luvun tai merkkijonon). Mikäli käyttäjä haluaa syöttää luvun, ohjelma
-//kasvattaa lukua yhdellä. Mikäli merkkijonon, ohjelma lisää loppuun *-merkin ja
+///5. Kirjoita ohjelma, joka kysyy käyttäjältä, mitä käyttäjä haluaa syöttää (kokonaisluvun, 
+//double -luvun tai merkkijonon). Mikäli käyttäjä haluaa syöttää luvun, ohjelma 
+//kasvattaa lukua yhdellä. Mikäli merkkijonon, ohjelma lisää loppuun *-merkin ja 
 //tulostaa tämän jälkeen vastauksen konsoliin. Käytä Switch komentoa
 
+int kluku;
+double dluku;
+string mjono, syote;
+
+Console.Write("Minkä tyyppisen tiedon haluat syöttää (kokonaisluvun, double -luvun tai merkkijonon (i/d/s)): ");
+syote = Console.ReadLine();
+if (syote == "i" || syote == "I" || syote == "d" || syote == "D" || syote == "s" || syote == "S")
+{
+    switch (syote)
+    {
+        case "s":
+        case "S":
+            Console.Write("Syötä merkkijono: ");
+            mjono = Console.ReadLine();
+            Console.WriteLine(mjono + "*");
+            break;
+
+        case "d":
+        case "D":
+            Console.Write("Syötä doubleluku: ");
+            dluku = Double.Parse(Console.ReadLine());
+            Console.WriteLine(dluku + 1);
+            break;
+
+        case "i":
+        case "I":
+        intalku:
+            Console.Write("Syötä kokonaisluku: ");
+            kluku = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(kluku + 1);
+            break;
+        default:
+            Console.WriteLine("Virhe!");
+            break;
+    }
+}
+Console.WriteLine();
+Console.WriteLine();
+
+//6.Kirjoita ohjelma, joka kasvattaa bonuspisteitä seuraavasti: Jos pisteet ovat välillä 1-
+//3, ohjelma kertoo pisteet 10:llä.Mikäli pisteet ovat välillä 4-6, ohjelma kertoo pisteet 
+//100:lla ja mikäli pisteet ovat välillä 7-9 ohjelma kertoo pisteet 1000:lla.Mikäli
+//pisteitä on 0 tai yli 9, ohjelma tulostaa virheviestin.
+
+
+Console.Write("Anna bonusten määrä: (1-9): ");
+int bonus = Int32.Parse(Console.ReadLine());
+
+switch (bonus)
+{
+    case 1:
+    case 2:
+    case 3:
+        bonus *= 10;
+        Console.WriteLine("Bonus on: " + bonus);
+        break;
+    case 4:
+    case 5:
+    case 6:
+        bonus *= 100;
+        Console.WriteLine("Bonus on: " + bonus);
+        break;
+    case 7:
+    case 8:
+    case 9:
+        bonus *= 1000;
+        Console.WriteLine("Bonus on: " + bonus);
+        break;
+    default:
+        Console.WriteLine("Antamasi arvo ei ole 1-9 välillä!");
+        break;
+}
+Console.WriteLine();
+Console.WriteLine();
+
+//7.Kirjoita ohjelma, joka muuttaa numerot (0 – 999) sanoiksi.Esim.
+//0 → Nolla
+//12 → Kaksitoista
+//98 → Yhdeksänkymmentä kahdeksan
+//273 → Kaksisataa seitsemänkymmentä kolme
+
+Console.Write("Anna numero (0-999), jonka ohjelma muuntaa sanaksi: ");
+int numero = Int32.Parse(Console.ReadLine());
+
+if (numero > 999 || numero < 0)
+{
+    Console.WriteLine("Luku ei ole 0-999 välillä!");
+    
+}
+else if (numero < 10)
+{
+    string yksi;
+    yksi = ykkoset(numero);
+    Console.WriteLine(yksi);
+}
+else if (numero < 20)
+{
+    string kymmenen1;
+    kymmenen1 = poikkeuskymmenet(numero);
+    Console.WriteLine(kymmenen1);
+}
+else if (numero < 100)
+{
+    string kymmenen2;
+    kymmenen2 = kymmenet(numero);
+    Console.WriteLine(kymmenen2);
+}
+else if (numero < 1000)
+{
+    string sata;
+    sata = sadat(numero);
+    Console.WriteLine(sata);
+}
+static string ykkoset(int number)
+{
+    switch (number)
+    {
+        case 1:
+            return "Yksi";
+            break;
+        case 2:
+            return "Kaksi";
+            break;
+        case 3:
+            return "Kolme";
+            break;
+        case 4:
+            return "Neljä";
+            break;
+        case 5:
+            return "Viisi";
+            break;
+        case 6:
+            return "Kuusi";
+            break;
+        case 7:
+            return "Seitsemän";
+            break;
+        case 8:
+            return "Kahdeksan";
+            break;
+        case 9:
+            return "Yhdeksän";
+            break;
+        default:
+            return "error";
+            break;
+    }
+}
+static string poikkeuskymmenet(int number)
+{
+    switch (number)
+    {
+        case 10:
+            return "Kymmenen";
+            break;
+        case 11:
+            return "Yksitoista";
+            break;
+        case 12:
+            return "Kaksitoista";
+            break;
+        case 13:
+            return "Kolmetoista";
+            break;
+        case 14:
+            return "Neljätoista";
+            break;
+        case 15:
+            return "Viisitoista";
+            break;
+        case 16:
+            return "Kuusitoista";
+            break;
+        case 17:
+            return "Seitsemäntoista";
+            break;
+        case 18:
+            return "Kahdeksantoista";
+            break;
+        case 19:
+            return "Yhdeksäntoista";
+            break;
+        default:
+            return "error";
+            break;
+    }
+}
+static string kymmenet(int number)
+{
+    string x = Convert.ToString(number);
+    string eka = x.Substring(0, 1);
+    string toka = x.Substring(1, 1);
+    number = Int32.Parse(eka);
+    int toinen = Int32.Parse(toka);
+    string y = ykkoset(toinen);
+    switch (number)
+    {
+        case 2:
+            return "Kaksikymmentä " + y;
+            break;
+        case 3:
+            return "Kolmekymmentä " + y;
+            break;
+        case 4:
+            return "Neljäkymmentä " + y;
+            break;
+        case 5:
+            return "Viisikymmentä " + y;
+            break;
+        case 6:
+            return "Kuusikymmentä " + y;
+            break;
+        case 7:
+            return "Seitsemänkymmentä " + y;
+            break;
+        case 8:
+            return "Kahdeksankymmentä " + y;
+            break;
+        case 9:
+            return "Yhdeksänkymmentä " + y;
+            break;
+        default:
+            return "error";
+            break;
+    }
+
+}
+static string sadat(int number)
+{
+    string x = Convert.ToString(number);
+    string y;
+    string eka = x.Substring(0, 1);
+    string toka = x.Substring(1, 2);
+    string ptoka = x.Substring(1, 1);
+    number = Int32.Parse(eka);
+    int toinen = Int32.Parse(toka);
+    if (ptoka == "1")
+    {
+        y = poikkeuskymmenet(toinen);
+    }
+    else
+    {
+        y = kymmenet(toinen);
+    }
+    switch (number)
+    {
+        case 1:
+            return "Sata" + y;
+            break;
+        case 2:
+            return "Kaksisataa " + y;
+            break;
+        case 3:
+            return "Kolmesataa " + y;
+            break;
+        case 4:
+            return "Neljäsataa " + y;
+            break;
+        case 5:
+            return "Viisisataa " + y;
+            break;
+        case 6:
+            return "Kuusisataa " + y;
+            break;
+        case 7:
+            return "Seitsemänsataa " + y;
+            break;
+        case 8:
+            return "Kahdeksansata a" + y;
+            break;
+        case 9:
+            return "Yhdeksänsataa " + y;
+            break;
+        default:
+            return "error";
+            break;
+    }
+}
