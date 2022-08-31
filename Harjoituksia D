@@ -1,0 +1,93 @@
+//1 & 6.Kirjoita ohjelma, joka laskee kaksi numeroa yhteen. Esim. yhteenlasku(3,5) → 8
+
+Console.Write("1.Anna numero: ");
+double i = double.Parse(Console.ReadLine());
+Console.Write("2.Anna numero: ");
+double j = double.Parse(Console.ReadLine());
+
+Console.WriteLine(i + " + " + j + " = " + (i + j));
+Console.WriteLine();
+Console.WriteLine();
+
+//2 & 7.Kirjoita ohjelma, joka muuttaa Celsius-asteet Fahrenheiteiksi (Celsius-asteet 
+//kerrotaan 1,8:lla ja lisätään 32). Esim.fahrenheit(10) → 50 
+
+Console.Write("Anna Celsius-aste niin muutan sen Fahrenheiteiksi!: ");
+double C = double.Parse(Console.ReadLine());
+
+Console.WriteLine(C + " * 1,8 + 32 = " + (C * 1.8 + 32));
+Console.WriteLine();
+Console.WriteLine();
+
+//3 & 8.Kirjoita ohjelma, joka tekee kaikki 4 peruslaskutoimitusta annetuille luvuille. Esim. 
+//perus(8,5) → 13 / 3 / 40 / 1,6
+Console.WriteLine("Anna 2 lukua ja teen niistä 4 peruslaksutoimitukset!");
+Console.Write("1.Luku: ");
+int p1 = int.Parse(Console.ReadLine());
+Console.Write("2.Luku: ");
+int p2 = int.Parse(Console.ReadLine());
+
+int summa, tulo, erotus;
+double jako;
+summa = p1 + p2;
+tulo = p1 * p2;
+erotus = p1 - p2;
+jako = (double)p1 / p2;
+Console.WriteLine("Lukujen " + p1 + " ja " + p2);
+Console.WriteLine("Summa = " + summa);
+Console.WriteLine("Erotus = " + erotus);
+Console.WriteLine("Tulo = " + tulo);
+Console.WriteLine("Osamäärä = " + jako);
+Console.WriteLine();
+Console.WriteLine();
+
+//4 & 9.Kirjoita ohjelma, joka palauttaa jakojäännöksen. Esim. jakoj(5,2) → 1 -- 5%2=1
+
+Console.WriteLine("Anna kaksi lukua niin lasken niiden jakojäännöksen!");
+Console.Write("1.Luku:");
+int luk1 = int.Parse(Console.ReadLine());
+Console.Write("2.Luku:");
+int luk2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine(luk1 + " % " + luk2 + " = " + (luk1 % luk2));
+Console.WriteLine();
+Console.WriteLine();
+
+//5.Kirjoita ohjelma, joka pyytää käyttäjän nimeä ja palauttaa viestin: ”Hei Jyri” (Jyri 
+//tässä annettu käyttäjä)
+
+Console.WriteLine("OHJE: Kirjoita nimesi niin sinua tervehditään!");
+Console.Write("Kerro nimesi: ");
+String nimi = Console.ReadLine(); // nimeen tallennetaan käyttäjän vastaus
+Console.WriteLine("Hei " + nimi);
+Console.WriteLine();
+Console.WriteLine();
+
+//10. Kirjoita ohjelma, joka kysyy käyttäjältä kokonaislukua välillä 1 – 10 ja 
+//tulostaa sitten ko. luvun kertotaulun (käytä silmukkaa hyväksesi). 
+//Esim, jos luku on 5, tulostus on: 
+//5 x 1 = 5
+//5 x 2 = 10
+//….
+//5 x 10 = 50
+
+Console.Write("Anna kokonaisluku 1-10 välillä: ");
+int luku = int.Parse(Console.ReadLine());
+
+if (luku >= 1 && luku <= 10)
+{
+    Console.WriteLine(luku + " x 1 = " + (luku * 1));
+    Console.WriteLine(luku + " x 2 = " + (luku * 2));
+    Console.WriteLine(luku + " x 3 = " + (luku * 3));
+    Console.WriteLine(luku + " x 4 = " + (luku * 4));
+    Console.WriteLine(luku + " x 5 = " + (luku * 5));
+    Console.WriteLine(luku + " x 6 = " + (luku * 6));
+    Console.WriteLine(luku + " x 7 = " + (luku * 7));
+    Console.WriteLine(luku + " x 8 = " + (luku * 8));
+    Console.WriteLine(luku + " x 9 = " + (luku * 9));
+    Console.WriteLine(luku + " x 10 = " + (luku * 10));
+}
+else
+{
+    Console.WriteLine("Luvut 1-10 välillä inoastaan!");
+}
