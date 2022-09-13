@@ -3,7 +3,6 @@
 
 Console.Write("1.Anna kokonaisluku: ");
 int luku1 = int.Parse(Console.ReadLine());
-Console.WriteLine();
 Console.Write("2.Anna kokonaisluku: ");
 int luku2 = int.Parse(Console.ReadLine());
 Console.WriteLine();
@@ -31,6 +30,7 @@ Console.Write("2.Anna kokonaisluku: ");
 luvut[1] = Int32.Parse(Console.ReadLine());
 Console.Write("3.Anna kokonaisluku: ");
 luvut[2] = Int32.Parse(Console.ReadLine());
+Console.WriteLine();
 
 Array.Sort(luvut);
 int viimeinen = luvut.Length;
@@ -86,7 +86,7 @@ switch (luku)
 Console.WriteLine();
 Console.WriteLine();
 
-//4. Kirjoita ohjelma, joka etsii suurimman annetuista 5 kokonaisluvusta
+//4.Kirjoita ohjelma, joka etsii suurimman annetuista 5 kokonaisluvusta
 
 int[] nro = new int[5];
 
@@ -100,6 +100,7 @@ Console.Write("4.Anna kokonaisluku: ");
 nro[2] = Int32.Parse(Console.ReadLine());
 Console.Write("5.Anna kokonaisluku: ");
 nro[2] = Int32.Parse(Console.ReadLine());
+Console.WriteLine();
 
 Array.Sort(nro);
 int viimeinen1 = nro.Length;
@@ -119,6 +120,7 @@ string mjono, syote;
 
 Console.Write("Minkä tyyppisen tiedon haluat syöttää (kokonaisluvun, double -luvun tai merkkijonon (i/d/s)): ");
 syote = Console.ReadLine();
+
 if (syote == "i" || syote == "I" || syote == "d" || syote == "D" || syote == "s" || syote == "S")
 {
     switch (syote)
@@ -127,6 +129,7 @@ if (syote == "i" || syote == "I" || syote == "d" || syote == "D" || syote == "s"
         case "S":
             Console.Write("Syötä merkkijono: ");
             mjono = Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine(mjono + "*");
             break;
 
@@ -134,17 +137,19 @@ if (syote == "i" || syote == "I" || syote == "d" || syote == "D" || syote == "s"
         case "D":
             Console.Write("Syötä doubleluku: ");
             dluku = Double.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine(dluku + 1);
             break;
 
         case "i":
         case "I":
-        intalku:
             Console.Write("Syötä kokonaisluku: ");
             kluku = Int32.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine(kluku + 1);
             break;
         default:
+            Console.WriteLine();
             Console.WriteLine("Virhe!");
             break;
     }
@@ -160,6 +165,7 @@ Console.WriteLine();
 
 Console.Write("Anna bonusten määrä: (1-9): ");
 int bonus = Int32.Parse(Console.ReadLine());
+Console.WriteLine();
 
 switch (bonus)
 {
@@ -196,6 +202,7 @@ Console.WriteLine();
 
 Console.Write("Anna numero (0-999), jonka ohjelma muuntaa sanaksi: ");
 int numero = Int32.Parse(Console.ReadLine());
+Console.WriteLine();
 
 if (numero > 999 || numero < 0)
 {
